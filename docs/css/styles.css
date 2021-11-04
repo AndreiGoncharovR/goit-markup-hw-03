@@ -8,13 +8,25 @@
   --card-set-gep: 30px;
 }
 
-.conteiner {
-  width: 1600px;
+.hero {
+  text-align: center;
+  width: 696px;
   margin-left: auto;
   margin-right: auto;
 }
+.hero-tytle {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 60px;
+
+  background-color: var(--back-color-dark);
+}
+
+.head-line {
+  display: flex;
+}
 .conteiner-content {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -24,16 +36,7 @@
 .distans {
   padding-top: 93px;
 }
-.distans:last-child {
-  padding-bottom: 93px;
-}
 
-.hero-size {
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
-}
 .upper-text h3 {
   font-size: 14px;
   line-height: 16px;
@@ -99,6 +102,11 @@ nav {
   display: flex;
 }
 
+.hero-distans {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .head-nav:last-child {
   margin-left: auto;
 }
@@ -106,22 +114,50 @@ nav {
   margin-right: 50px;
 }
 
+.photo {
+  display: flex;
+  justify-content: center;
+}
 .card {
   display: flex;
+  justify-content: center;
 }
+.card-set .content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.card-set .content p {
+  margin-top: 4px;
+}
+.card .content {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card .content p {
+  margin-top: 10px;
+}
+
 .card li:not(:last-child) {
   margin-right: 30px;
 }
-.card:not(:last-child) {
+.photo li:not(:last-child) {
   margin-right: 30px;
 }
 
 .button-portfolio {
+  margin-right: 8px;
   display: flex;
   justify-content: center;
 }
-.button-portfolio:not(:last-child) {
+.button-portfolio li:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 56px;
 }
 
 .active-page {
@@ -147,7 +183,7 @@ button {
 .order-servis {
   font-size: 16px;
   line-height: 30px;
-  display: block;
+
   margin-top: 30px;
 }
 button:hover,
@@ -171,6 +207,10 @@ button:focus {
   color: var(--light-text-color);
 }
 
+.card-section {
+  padding-top: 93px;
+  padding-bottom: 93px;
+}
 .back-color-dark {
   background-color: var(--back-color-dark);
 }
@@ -189,20 +229,15 @@ button:focus {
   text-transform: uppercase;
 }
 
-.position-text {
-  text-align: center;
+.card li {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--light-text-color);
 }
-.position-button {
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
-}
-
 .card-set {
   padding: 0;
-  margin: 0;
+  margin-bottom: 94px;
   list-style: none;
 
   display: flex;
@@ -215,28 +250,29 @@ button:focus {
   flex-basis: calc(100% / 3 - var(--card-set-gep));
   margin-left: var(--card-set-gep);
   margin-top: var(--card-set-gep);
+  border: 1px solid #eeeeee;
 }
+
 h1 {
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
-  position: absolute;
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 280px;
+  margin: 0px;
 }
 h2 {
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   margin-bottom: 50px;
+  margin-top: 0px;
 }
 .size-h3 h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .icon-text h3 {
   font-weight: bold;
@@ -251,14 +287,30 @@ h2 {
 ul {
   list-style-type: none;
   padding-left: 0;
-  margin-left: 0;
+  margin: 0;
 }
 a {
   color: #212121;
   text-decoration: none;
 }
-
+body {
+  margin: 0px;
+}
 footer {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h3 {
+  margin: 0px;
 }
