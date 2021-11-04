@@ -22,6 +22,9 @@
   background-color: var(--back-color-dark);
 }
 
+.line {
+  border-bottom: 1px solid #ececec;
+}
 .head-line {
   display: flex;
 }
@@ -183,8 +186,9 @@ button {
 .order-servis {
   font-size: 16px;
   line-height: 30px;
-
+  padding: 10px 32px 10px 32px;
   margin-top: 30px;
+  font-family: "Roboto", sans-serif;
 }
 button:hover,
 button:focus {
