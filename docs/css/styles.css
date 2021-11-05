@@ -234,8 +234,10 @@ button:focus {
   text-transform: uppercase;
 }
 
-.upper-text p {
+.upper-text li {
   max-width: 270px;
+}
+.upper-text p {
   margin-top: 10px;
 }
 
