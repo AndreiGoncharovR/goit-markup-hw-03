@@ -121,11 +121,15 @@ nav {
   display: flex;
 }
 .card-set .content {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
-  margin-left: 24px;
-  margin-right: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 .card-set .content p {
   margin-top: 4px;
@@ -151,13 +155,12 @@ nav {
   padding-top: 94px;
 }
 .button-portfolio {
-  margin-right: 8px;
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .button-portfolio li:not(:last-child) {
   margin-right: 8px;
-  margin-bottom: 56px;
 }
 .button-portfolio button {
   padding: 6px 22px 6px 22px;
@@ -204,6 +207,7 @@ button:focus {
 .addr {
   color: #ffffff;
   font-weight: 400;
+  font-style: normal;
 }
 .addr a {
   color: rgb(255, 255, 255, 0.6);
@@ -246,7 +250,7 @@ button:focus {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--light-text-color);
-  max-width: 270px;
+  width: 270px;
 }
 .card-set {
   padding: 0;
@@ -263,7 +267,6 @@ button:focus {
   flex-basis: calc(100% / 3 - var(--card-set-gep));
   margin-left: var(--card-set-gep);
   margin-top: var(--card-set-gep);
-  border: 1px solid #eeeeee;
 }
 
 h1 {
